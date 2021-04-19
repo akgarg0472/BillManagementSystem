@@ -1,4 +1,4 @@
-# BillingSystem
+# BillManagementSystem
 Project of Bills/Payment Records Management System GUI application.<br/>
 This project is useful for those people who want to maintain their payment history in digital format or want to shift to digital management of data from manual without installing any extra tools & softwares.<br/>
 To start this application, just directly run the .jar file and application will start. Default login id and password is **admin**.
