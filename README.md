@@ -7,5 +7,5 @@ To start this application, just directly run the .jar file and application will 
 1. Java
 2. JavaFX
 3. IntelliJ Idea IDE
-4. Apache POI for generating excel files
+4. Apache POI library for generating excel files
 5. SQLite Database
