@@ -1,0 +1,27 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<DialogPane xmlns:fx="http://javafx.com/fxml" fx:controller="billingrecord.RecordController">
+    <headerText>
+        Fill the information of new Record
+    </headerText>
+    <content>
+        <GridPane vgap="10" hgap="10">
+            <Label text="Client/Firm Name" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="clientNameField" promptText="Name" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+            <Label text="Assessment Year" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <ComboBox fx:id="assessmentYearField" promptText="Assessment Year" GridPane.rowIndex="1"
+                      GridPane.columnIndex="1"/>
+
+            <Label text="Income Tax / GST" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <ComboBox fx:id="taxTypeField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+            <Label text="Payment Date" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <DatePicker fx:id="paymentDateField" promptText="dd/mm/yyyy" GridPane.rowIndex="3"
+                        GridPane.columnIndex="1"/>
+
+            <Label text="Amount Received" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <TextField fx:id="paymentAmountField" promptText="Amount" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+        </GridPane>
+    </content>
+</DialogPane>

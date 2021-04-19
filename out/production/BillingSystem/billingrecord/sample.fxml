@@ -1,0 +1,83 @@
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<BorderPane fx:id="mainPanel" fx:controller="billingrecord.Controller"
+            xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <MenuBar>
+            <Menu text="File">
+                <MenuItem fx:id="show" text="Show Records" onAction="#showAllRecord"/>
+                <MenuItem fx:id="add" text="New Record" onAction="#addRecord"/>
+                <MenuItem fx:id="export" text="Export to Excel" onAction="#exportToExcel"/>
+                <SeparatorMenuItem/>
+                <MenuItem fx:id="exit" text="Exit" onAction="#exitApplication"/>
+            </Menu>
+            <Menu text="Edit">
+                <MenuItem fx:id="edit" text="Edit" onAction="#editRecord"/>
+                <MenuItem fx:id="delete" text="Delete" onAction="#deleteRecord"/>
+                <MenuItem fx:id="search" text="Search" onAction="#searchRecord"/>
+            </Menu>
+            <Menu text="Tools" visible="false">
+                <MenuItem fx:id="interest" text="Interest Calculator" onAction="#availableSoon"/>
+                <MenuItem fx:id="itcal" text="IT Calculator" onAction="#availableSoon"/>
+            </Menu>
+            <Menu text="Help">
+                <MenuItem fx:id="help" text="Help           F11" onAction="#showHelp"/>
+                <MenuItem text="Changelogs" onAction="#showChangelogs"/>
+                <SeparatorMenuItem/>
+                <MenuItem text="About" onAction="#showAbout"/>
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <center>
+        <TableView fx:id="recordsTable">
+            <contextMenu>
+            </contextMenu>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+
+            <columns>
+                <TableColumn text="Firm/Client Name" style="-fx-alignment: CENTER">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="clientName"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="Assessment Year" style="-fx-alignment: CENTER">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="assessmentYear"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="Income Tax/GST" style="-fx-alignment: CENTER">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="taxType"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="Payment Date" style="-fx-alignment: CENTER">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="paymentDate"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn text="Payment Amount (₹)" style="-fx-alignment: CENTER">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="paymentAmount"/>
+                    </cellValueFactory>
+                </TableColumn>
+
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER">
+            <Label text="All copyrights© reserved"/>
+        </HBox>
+    </bottom>
+
+</BorderPane>

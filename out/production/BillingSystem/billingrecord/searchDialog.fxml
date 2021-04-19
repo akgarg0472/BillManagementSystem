@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+<GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="billingrecord.SearchController" vgap="10">
+
+    <ComboBox fx:id="searchComboBox" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="searchTextField" promptText="Search text" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+
+</GridPane>

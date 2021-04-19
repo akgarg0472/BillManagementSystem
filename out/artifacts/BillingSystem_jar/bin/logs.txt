@@ -1,0 +1,6 @@
+--------------- LOG FILE --------------- 
+
+25/10/2020 22:59:19 --> Program started
+25/10/2020 22:59:22 --> All resources closed and program terminates successfully
+25/10/2020 23:33:51 --> Program started
+25/10/2020 23:33:51 --> All resources closed and program terminates successfully
